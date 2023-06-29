@@ -1,0 +1,188 @@
+    :root {
+    	--red: #ee1c25;
+    	--darkerred: #4a0000;
+    	--white: #ffffff;
+    	--darkergray: #231f20;
+    	--brownred: #7a0101;
+    	--darkred: #b11117;
+    	--darkgray: #646466;
+    	--gray: #949599;
+    	--lightgray: #c8c9cb;
+    	--darkblue: #4b5667;
+    	--blue: #006775;
+    	--lightblue: #2496a3;
+    	--darkgreen: #6b9e83;
+    	--green: #a4b06e;
+    	--lightgreen: #e8ebc8;
+    	--purple: #9e7eb9;
+    	--pink: #cb9fa5;
+    	--orange: #e4a157;
+    	--orange-lite: #fbf3e9;
+    	--blue-lite: #e6fcff;
+    	--red-lite: #fde7e8;
+    	--green-lite: #f0f5f2;
+    	--gray-lite: #f2f2f3;
+    }
+
+
+    /* page background */
+    .wy-nav-content-wrap {
+    	background-color: var(--gray-lite);
+    }
+
+    /* content background */
+    .wy-nav-content {
+    	background-color: var(--white);
+    }
+
+
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search,
+    .wy-nav-top {
+    	background: var(--darkerred);
+    }
+
+    /* Sidebar */
+    .wy-nav-side {
+    	background: var(--darkred);
+    }
+
+    /* Search entry border color */
+    .wy-side-nav-search input[type=text] {
+    	border-color: var(--darkred);
+    	background-color: var(--white);
+    }
+
+    /* sidebar sub-menus */
+    .wy-menu-vertical li.toctree-l1.current>a,
+    .wy-menu-vertical li.toctree-l1.current li.toctree-l2>a {
+    	background: var(--white);
+    }
+
+    .wy-menu-vertical li.toctree-l2.current>a,
+    .wy-menu-vertical li.toctree-l2.current li.toctree-l3>a {
+    	background: var(--red-lite);
+    }
+
+    .wy-menu-vertical li.toctree-l3.current>a,
+    .wy-menu-vertical li.toctree-l3.current li.toctree-l4>a {
+    	background: var(--gray-lite);
+    }
+
+
+
+    /* RST roles */
+    .red-highlight {
+    	color: var(--red);
+    	font-weight: bolder;
+    }
+
+    .green-highlight {
+    	color: var(--green);
+    	font-weight: bolder;
+    }
+
+    .blue-highlight {
+    	color: var(--blue);
+    	font-weight: bolder;
+    }
+
+    .orange-highlight {
+    	color: var(--orange);
+    	font-weight: bolder;
+    }
+
+
+    /*
+      autodoc customization
+      */
+    .rst-content code,
+    .rst-content tt {
+    	color: var(--darkerred);
+    	/*function/class name color*/
+    	font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace;
+    	padding: 2px 5px;
+    }
+
+    .rst-content code.xref,
+    .rst-content tt.xref {
+    	font-weight: bolder;
+    	color: var(--red);
+    }
+
+    html.writer-html4 .rst-content dl:not(.docutils)>dt,
+    html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple)>dt {
+    	display: table;
+    	margin: 6px 0;
+    	font-size: 90%;
+    	line-height: normal;
+    	background: var(--red-lite);
+    	/*bg color autodoc*/
+    	color: var(--lightblue);
+    	/*text color autodoc*/
+    	border-top: 3px solid var(--darkerred);
+    	/*overline color autodoc*/
+    	padding: 6px;
+    	position: relative;
+    }
+
+
+    .rst-content .viewcode-back,
+    .rst-content .viewcode-link {
+    	display: inline-block;
+    	color: var(--darkblue);
+    	/*source link color autodoc*/
+    	font-size: 80%;
+    	padding-left: 24px;
+    }
+
+
+    html.writer-html4 .rst-content dl:not(.docutils) dl:not(.field-list)>dt,
+    html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple) dl:not(.field-list)>dt {
+    	margin-bottom: 6px;
+    	border: none;
+    	border-left: 3px solid var(--darkgray);
+    	/* paramenters: line color */
+    	background: var(--gray-lite);
+    	/* paramenters: bg color */
+    	color: var(--darkerred);
+    	/* paramenters: text color */
+    }
+
+
+    .wy-menu-vertical header,
+    .wy-menu-vertical p.caption {
+    	color: var(--darkerred)
+    }
+
+    .rst-content .seealso .admonition-title {
+    	background-color: var(--blue);
+    	color: var(--white);
+    }
+
+    .admonition.seealso {
+    	background-color: var(--blue-lite);
+    	color: var(--darkergray);
+    }
+
+
+    .rst-content .note .admonition-title {
+    	background-color: var(--darkgreen);
+    	color: var(--white);
+    }
+
+    .admonition.note {
+    	background-color: var(--green-lite);
+    	color: var(--darkergray);
+    }
+
+
+    .rst-content .warning .admonition-title {
+    	background-color: var(--orange);
+    	color: var(--white);
+    }
+
+    .admonition.warning {
+    	background-color: var(--orange-lite);
+    	color: var(--darkergray);
+    }
