@@ -110,7 +110,7 @@ rst_prolog = """
 .. role:: orange-highlight
 """
 
-pygments_style = "flaeming_style.FlaemingStyleLight"
+pygments_style = "flaeming_style.FlaemingStyleDark"
 
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
